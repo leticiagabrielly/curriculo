@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -252,23 +252,33 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
+            <form id="contactForm" name="sentMessage" method="post" action="https://leticiagabrielly.github.io/curriculo/">
+              <input type="hidden"name="redirect" value="http://www.seudominio.com.br/ok.htm">
+              <input name="recipient" value="leticia.gabrielly1@gmail.com" type="hidden">
+              <input name="required" value="recipient,email,realname,subject,message" type="hidden">
+              <input type="hidden" name="sort" value="order:name,email,phone,subject,message">
+              <input type="hidden" name="subject" value="Formulário de Contato"> 
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Nome" required data-validation-required-message="Por favor digite seu nome.">
+                    <label for="name">Nome</label>
+                    <input class="form-control" id="name" type="text" name="name" required data-validation-required-message="Por favor digite seu nome.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Email" required data-validation-required-message="Por favor digite seu email.">
+                    <input class="form-control" id="email" type="email" name="email" placeholder="Email" required data-validation-required-message="Por favor digite seu email.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Telefone" required data-validation-required-message="Por favor digite seu número de telefone.">
+                    <input class="form-control" id="phone" type="tel" name="phone" placeholder="Telefone" required data-validation-required-message="Por favor digite seu número de telefone.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Mensagem" required data-validation-required-message="Por favor digite sua mensagem."></textarea>
+                    <input class="form-control" id="phone" type="text" name="subject" placeholder="Assunto" required data-validation-required-message="Por favor digite o assunto.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" placeholder="Mensagem" required data-validation-required-message="Por favor digite sua mensagem."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -328,7 +338,7 @@
                   <h2>Densenvolvimento site institucional</h2>
                   <p class="item-intro text-muted"></p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="Imagem site Athos Tecnologia">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p></p>
                   <ul class="list-inline">
                     <li>Data: Janeiro 2017</li>
                     <li>Cliente: Athos Tecnologia</li>
